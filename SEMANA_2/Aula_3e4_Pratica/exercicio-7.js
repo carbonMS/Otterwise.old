@@ -12,19 +12,57 @@
 //   let positiveNumbers = "";
 //   let negativeNumbers = "";
 
-myArray = [-5, 0, -3, -4, 12];
+myArray = [-5, 0, -3, -4, 12]
 
-let resultPar = 0;
-function showNumbers() {
-  let parNumbers = "";
-
-  for (let index = 0; index < myArray.length; index++) {
-    const result = myArray[index];
-
-    let par = myArray[index] % 2 === 0;
-    parNumbers = `${parNumbers} \n${par}  valor(es) par(es)\n`;
+let result = 0
+let countPositive = 0
+const positiveNumbers = (array) => {
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] >= result) {
+      countPositive += 1
+      // countPositive++
+      // countPositive = countPositive + 1
+    }
   }
-  return parNumbers;
+  console.log(countPositive + ' valor(es) positivo(s)')
 }
 
-console.log(showNumbers());
+positiveNumbers(myArray)
+
+let countNegative = 0
+const negativeNumbers = (array) => {
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] < result) {
+      countNegative += 1
+      // countPositive++
+      // countPositive = countPositive + 1
+    }
+  }
+  console.log(countNegative + ' valor(es) negativo(s)')
+}
+
+negativeNumbers(myArray)
+
+let countPar = 0
+const parNumbers = (array) => {
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] % 2 === result) {
+      countPar += 1
+    }
+  }
+  console.log(countPar + ' valor(es) par(es)')
+}
+
+parNumbers(myArray)
+
+let countImpar = 0
+const imparNumbers = (array) => {
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] % 2 !== result) {
+      countImpar += 1
+    }
+  }
+  console.log(countImpar + ' valor(es) ímpar(es)')
+}
+
+imparNumbers(myArray)

@@ -11,13 +11,13 @@
 // 55
 // -----------------
 // 6
-
-let result = 0;
-function addNum(number) {
-  for (index = 1; index < 1; index++) {
-    result = index * number;
+let choosenNumber = 10
+let saveNumbers = 0
+const addUpTo = (numbers) => {
+  for (let index = 1; index <= numbers; index++) {
+    saveNumbers = saveNumbers + index
   }
-  return result;
+  console.log(saveNumbers)
 }
 
-console.log(addNum(99));
+addUpTo(choosenNumber)

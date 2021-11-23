@@ -7,9 +7,14 @@
 // -----------------
 // [-5, -1467, 32, 28, 65, -2, -49, -63, 22, -13, 255 ]
 
-myArray = [1, -7, -23, 25, -19, 13, 10, -8, 52, -153, -127];
-
-for (let index = 0; index < myArray.length; index++) {
-  const element = myArray[index];
-  if (myArray[index] > 0) console.log(myArray[index]);
+let myArray = [1, -7, -23, 25, -19, 13, 10, -8, 52, -153, -127]
+let result = 0
+const result1 = (array) => {
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] > result) {
+      console.log(array[index])
+    }
+  }
 }
+
+result1(myArray)

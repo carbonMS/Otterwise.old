@@ -11,17 +11,17 @@
 
 // console.log(arrayNomes + ".");
 
-arrayNames = ["Angela", "Rosa", "Ticiana", "Carla", "Renata"];
-let result = "";
+arrayNames = ['Angela', 'Rosa', 'Ticiana', 'Carla', 'Renata']
+let result = ''
 
 for (let index = 0; index < arrayNames.length; index++) {
-  const element = arrayNames[index];
+  const element = arrayNames[index]
 
   if (index === arrayNames.length - 1) {
-    result = result + element;
+    result = result + element
   } else {
-    result = result + element + ", ";
+    result = result + element + ', '
   }
 }
 
-console.log(result);
+console.log(result)
